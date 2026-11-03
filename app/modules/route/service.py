@@ -3,8 +3,8 @@ from app.modules.graph.service import get_route_to_dest,  contains_country
 
 class RouteService():
 
-    def __init__(self, repository: dict):
-        self.repository = repository
+    def __init__(self):
+        pass
 
     def get_route(self, data: RouteIn):
         dest = data.dest
@@ -13,8 +13,8 @@ class RouteService():
             return None
 
         route = get_route_to_dest("USA", dest=dest)
-        res = RouteResponse(dest=dest, list=route)
-        
+        res = RouteResponse(dest=dest, route=route)
+
         return res
 
 
