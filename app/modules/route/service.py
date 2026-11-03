@@ -9,12 +9,10 @@ class RouteService():
     def get_route(self, data: RouteIn):
         dest = data.dest
 
-        if contains_country(dest) == None:
+        if contains_country(dest) == False:
             return None
 
         route = get_route_to_dest("USA", dest=dest)
         res = RouteResponse(dest=dest, route=route)
 
         return res
-
-
