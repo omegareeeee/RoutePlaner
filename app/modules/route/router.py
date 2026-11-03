@@ -13,6 +13,9 @@ def get_route(country_code: str, service: RouteService = Depends(get_service)):
     
     route = service.get_route(data=RouteIn(dest=country_code))
     if(route == None):
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND)
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Cannot Find Country Code {country_code}"
+        )
     return route
     
