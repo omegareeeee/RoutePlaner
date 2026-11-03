@@ -1,20 +1,22 @@
 from app.modules.graph.constant import COUNTRY_BORDER_GRAPH
 from collections import deque
 
+
+
 def contains_country(country: str):
     return country in COUNTRY_BORDER_GRAPH
 
-def get_route_to_dest(graph: dict, src: str, dest: str):
+def get_route_to_dest(src: str, dest: str):
     if src == dest:
         return [src]
 
-    queue = deque([src, [src]])
+    queue = deque([(src, [src])])
     prev = {src}
 
     while queue:
         cur, route = queue.popleft()
 
-        for node in graph.get(cur, []):
+        for node in COUNTRY_BORDER_GRAPH.get(cur, []):
             if node == dest:
                 return route + [node]
 
