@@ -12,9 +12,9 @@ The input is also case-insetive, and will return a 404 if it's not a valid count
 
 ### Dependencies
 
-*Python 3.13
-*uv
-*Docker
+* Python 3.13
+* uv
+* Docker
 
 ### Installing
 
