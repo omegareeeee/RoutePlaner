@@ -18,7 +18,7 @@ Docker
 
 ### Installing
 
-* git clone <>
+* git clone git@github.com:omegareeeee/RoutePlaner.git
 * cd RoutePlaner
 * uv sync
 
