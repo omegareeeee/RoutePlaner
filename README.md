@@ -26,11 +26,19 @@ Docker
 
 * How to run the program
 * Step-by-step bullets
+  
+Run (locally):
 ```
-Run (locally): your uvicorn app.main:app --reload command through uv
-Run tests: uv run pytest
-Run w/ Docker: docker build -t country-router
-               docker run -p 8000:8000 country-router
+uvicorn app.main:app --reload 
+```
+Run tests: 
+```
+uv run pytest
+```
+Run w/ Docker:
+```
+ docker build -t country-router
+ docker run -p 8000:8000 country-router
 ```
 
 ## Example
