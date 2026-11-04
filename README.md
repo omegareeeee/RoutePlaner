@@ -45,19 +45,19 @@ Run w/ Docker:
 
 Any advise for common problems or issues.
 ```
-domainname.com/PAN
+  Input: domainname.com/PAN
   output: {
            "dest":"PAN",
            "route":["USA","MEX","GTM","HND","NIC","CRI","PAN"]
           }
 
-domainname.com/blz
+  Input: domainname.com/blz
   output: {
           "dest":"BLZ",
           "route":["USA","MEX","BLZ"]
           }
 
-domainname.com/nfl
+  Input: domainname.com/nfl
   output: {
           "detail":"Cannot Find Country Code nfl"
           }
