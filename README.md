@@ -40,6 +40,8 @@ Run w/ Docker:
  docker build -t country-router
  docker run -p 8000:8000 country-router
 ```
+## How to use
+domain.com/{insert country code here}
 
 ## Example
 
